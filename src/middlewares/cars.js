@@ -190,19 +190,21 @@ exports.validateUpdateCars = (req, res, next) => {
           return datePattern.test(date) && !isNaN(Date.parse(date));
         },
         {
-          message:
-            "Available date must be in the format YYYY-MM-DDTHH:MM:SS.sssZ",
+          message: "Available date must be in the format YYYY-MM-DD",
         }
       )
       .optional(),
     transmission: z.enum(["Automatic", "Manual"]).optional(),
     available: z
       .string()
-      .transform((val) => val.toLowerCase() === "true")
-      .refine((val) => val === true || val === false, {
-        message: "Available must be 'true' or 'false'",
-      })
-      .optional(),
+      .min(1, { message: "Available cannot be empty" }) // Validasi untuk input kosong
+      .refine(
+        (val) => val.toLowerCase() === "true" || val.toLowerCase() === "false",
+        {
+          message: "Available must be 'true' or 'false'",
+        }
+      )
+      .transform((val) => val.toLowerCase() === "true"),
     type: z.string().trim().optional(),
     year: z
       .string()
