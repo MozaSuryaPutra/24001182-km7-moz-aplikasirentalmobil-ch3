@@ -204,7 +204,8 @@ exports.validateUpdateCars = (req, res, next) => {
           message: "Available must be 'true' or 'false'",
         }
       )
-      .transform((val) => val.toLowerCase() === "true"),
+      .transform((val) => val.toLowerCase() === "true")
+      .optional(),
     type: z.string().trim().optional(),
     year: z
       .string()

@@ -837,7 +837,7 @@
         "description": "Motor Tahan Banting",
         "availableAt": "2022-03-24",
         "transmission": "Automatic",
-        "available": false,
+        "available": true,
         "type": "sedan",
         "year": 2018,
         "options": [
