@@ -846,5 +846,45 @@
         ],
         "specs": "rem depan",
         "image": "https://ik.imagekit.io/lpzgk6g6j/TUGAS2_FiYISHp4X.png"
+    },
+    {
+        "id": "1ed11d4f-dad5-4bef-b7e4-4a2b6e95a13c",
+        "plate": "DBH-4677",
+        "manufacture": "Suzuki",
+        "model": "Beat Street",
+        "rentPerDay": 20000,
+        "capacity": 2,
+        "description": "Motor Tahan Banting",
+        "availableAt": "2022-03-24",
+        "transmission": "Automatic",
+        "available": false,
+        "type": "sedan",
+        "year": 2018,
+        "options": [
+            "keren",
+            "parah"
+        ],
+        "specs": "rem depan",
+        "image": "https://ik.imagekit.io/lpzgk6g6j/ritocipta__Journal_manager__fix_cKeymVNy0.pdf"
+    },
+    {
+        "id": "0610c65e-78ce-4835-8959-a7573cffe22a",
+        "plate": "DBH-4677",
+        "manufacture": "Suzuki",
+        "model": "Beat Street",
+        "rentPerDay": 20000,
+        "capacity": 2,
+        "description": "Motor Tahan Banting",
+        "availableAt": "2022-03-24",
+        "transmission": "Automatic",
+        "available": false,
+        "type": "sedan",
+        "year": 2018,
+        "options": [
+            "keren",
+            "parah"
+        ],
+        "specs": "rem depan",
+        "image": "https://ik.imagekit.io/lpzgk6g6j/ritocipta__Journal_manager__fix_H5_t1oUq_.pdf"
     }
 ]
